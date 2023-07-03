@@ -16,6 +16,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_03_135533) do
     t.string "contact"
     t.string "location"
     t.text "bio"
+    t.string "username"
+    t.string "password_digest"
+    t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

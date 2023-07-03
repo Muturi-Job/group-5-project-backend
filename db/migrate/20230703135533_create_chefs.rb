@@ -5,6 +5,9 @@ class CreateChefs < ActiveRecord::Migration[7.0]
       t.string :contact
       t.string :location
       t.text :bio
+      t.string :username
+      t.string :password_digest
+      t.string :image
 
       t.timestamps
     end
