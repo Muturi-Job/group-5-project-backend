@@ -1,3 +1,0 @@
-class ChefRecipesController < ApplicationController
-   
-end
