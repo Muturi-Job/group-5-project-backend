@@ -51,14 +51,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_04_100754) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "tags", force: :cascade do |t|
-    t.string "name"
-    t.string "description"
-    
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "reviews", force: :cascade do |t|
     t.integer "chef_id"
     t.string "chef_name"
