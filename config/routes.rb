@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
-
+  resources :reviews
+  resources :chefs
   resources :recipe_tags
   resources :tags
   resources :recipes
-  resources :chef_recipes
-  resources :reviews
+
+
+
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
