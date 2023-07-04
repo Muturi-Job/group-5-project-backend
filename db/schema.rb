@@ -14,6 +14,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_04_100754) do
   create_table "recipe_tags", force: :cascade do |t|
     t.integer "recipe_id"
     t.integer "tag_id"
+
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -24,6 +25,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_04_100754) do
     t.string "procedure"
     t.integer "chef_id"
     t.string "image_url"
+
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -31,6 +33,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_04_100754) do
   create_table "tags", force: :cascade do |t|
     t.string "name"
     t.string "description"
+    
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -43,6 +46,15 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_04_100754) do
     t.string "username"
     t.string "password_digest"
     t.string "image"
+    
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tags", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+    
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -52,6 +64,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_04_100754) do
     t.string "chef_name"
     t.float "rating"
     t.text "description"
+
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
